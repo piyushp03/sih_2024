@@ -1,0 +1,28 @@
+USP.......
+google maps
+posts
+contact the business / enquiry (dm, email, call, whatsapp)
+
+
+--------------------  TOOLS/ Libraries  ---------------------------
+
+react native 
+expo
+tailwindcss (styling)
+firebase(db)
+clerk (authentication/ user managment)
+react navigation (navbar bottom)
+
+--------------------  Pendings  ----------------------------
+
+**business page
+**payment gateway
+business offers
+upvoting downvoting and suggestions accordingly
+**g maps
+near you
+**dms
+phone contact 
+restyling 
+better login and welcome 
+**my orders 

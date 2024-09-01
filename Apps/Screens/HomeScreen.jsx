@@ -37,7 +37,7 @@ export default function HomeScreen() {
     const querySnapshot=await getDocs(collection(db, "Category")); // category collection
 
     querySnapshot.forEach((doc)=>{
-      console.log("Docs:", doc.data());
+      //console.log("Docs:", doc.data());
       setCategoryList(categoryList=>[...categoryList, doc.data()]);
     })
 
@@ -48,7 +48,7 @@ export default function HomeScreen() {
     const querySnapshot=await getDocs(collection(db, "businessPost"),orderBy('createdAt', 'desc')); // category collection
 
     querySnapshot.forEach((doc)=>{
-      console.log("Docs:", doc.data());
+      //console.log("Docs:", doc.data());
       setLatestItemList(latestItemList=>[...latestItemList, doc.data()]);
      })
 }

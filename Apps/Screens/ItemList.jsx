@@ -22,7 +22,7 @@ export default function ItemList() {
         const snapshot=await getDocs(q);
         setLoading(false);
         snapshot.forEach(doc=>{
-            console.log(doc.data());
+            //console.log(doc.data());
             setItemList(itemList=>[...itemList, doc.data()])
             setLoading(false);
         })

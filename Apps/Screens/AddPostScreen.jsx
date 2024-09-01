@@ -30,7 +30,7 @@ export default function AddPostScreen() {
     const querySnapshot=await getDocs(collection(db, "Category")); // category collection
 
     querySnapshot.forEach((doc)=>{
-      console.log("Docs:", doc.data());
+      //console.log("Docs:", doc.data());
       setCategoryList(categoryList=>[...categoryList, doc.data()]);
     })
 
@@ -45,7 +45,7 @@ export default function AddPostScreen() {
       quality: 1,
     });
 
-    console.log(result);
+    //console.log(result);
 
     if(!result.canceled) {
       setImage(result.assets[0].uri);
@@ -62,10 +62,10 @@ export default function AddPostScreen() {
     const storageRef = ref(storage, 'businessPost/'+Date.now()+".jpg");
 
     uploadBytes(storageRef, blob).then((snapshot) => {
-      console.log('Uploaded a blob or file!');
+      //console.log('Uploaded a blob or file!');
     }).then((resp)=>{
       getDownloadURL(storageRef).then(async(downloadUrl)=>{
-        console.log(downloadUrl);
+        //console.log(downloadUrl);
         value.image=downloadUrl;
         value.userName=user.fullName;
         value.userEmail=user.primaryEmailAddress.emailAddress;
@@ -95,7 +95,7 @@ export default function AddPostScreen() {
           const errors={}
           if(!values.title)
           {
-            console.log("Title not Present");
+            //console.log("Title not Present");
             ToastAndroid.show('Title must be there', ToastAndroid.SHORT)
             errors.name="Title must be there"
           }

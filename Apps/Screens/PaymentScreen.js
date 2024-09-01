@@ -44,15 +44,15 @@ const PaymentScreen = ({route}) => {
         });
         if (error) {
           alert(`Payment Confirmation Error ${error.message}`);
-          console.log(`Payment Confirmation Error ${error.message}`);
+          //console.log(`Payment Confirmation Error ${error.message}`);
           
         } else if (paymentIntent) {
           alert(`Payment Successful!! \nProduct Name:  ${productName}\nAmount Payed: ₹${productPrice}`);
-          console.log("Payment successful ", paymentIntent);
+          //console.log("Payment successful ", paymentIntent);
         }
       }
     } catch (e) {
-      console.log(e);
+      //console.log(e);
     }
     //3.Confirm the payment with the card details
   };

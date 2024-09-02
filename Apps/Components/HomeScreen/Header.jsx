@@ -9,21 +9,21 @@ export default function Header() {
   return (
     <View>
       {/*USer info section*/}
-      <View className='flex flex-row items-center gap:2'>
+      <View className='flex items-center gap-2'>
         <Image source={{uri:user?.imageUrl}}
         
-        className='rounded-full w-12 h-12'
+        className='rounded-full w-20 h-20'
         />
 
-        <View>
+        <View className='items-center mt-2'>
 
-          <Text className='text-[18px]'>Welcome  </Text>
-          <Text className='text-[20px] font-bold'>{user?.firstName}</Text>
+          <Text className='text-[20px]'>Welcome  </Text>
+          <Text className='text-[35px] font-bold'>{user?.firstName}</Text>
         </View>
       </View>
       {/*search bar*/}
-      <View className='p-[9px] px-5 flex flex-row items-center bg-blue-50 mt-5 rounded-full border-[1px] border-blue-300 '>
-      <FontAwesome name="search" size={24} color="gray" className='ml-3' />
+      <View className='p-[14px] px-5 flex flex-row items-center bg-gray-170 mt-[30px] border-green-500 border-[1px] rounded-3xl shadow-lg'>
+      <FontAwesome name="search" size={24} color="black" className='ml-3' />
 
         <TextInput placeholder='Search' className='ml-2 text-[18px]'
         onChangeText={(value)=>console.log(value)}

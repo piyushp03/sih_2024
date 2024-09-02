@@ -7,8 +7,8 @@ export default function Categories({categoryList}) {
 
   const navigation=useNavigation();
   return (
-    <View className='mt-3'>
-      <Text className="font-bold text-[20px]">Categories</Text>
+    <View className='mt-5'>
+      <Text className="font-bold text-[20px] px-2">Categories</Text>
       <FlatList 
       data={categoryList}
       numColumns={4}

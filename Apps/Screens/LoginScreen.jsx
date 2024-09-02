@@ -27,7 +27,7 @@ export default function LoginScreen() {
 
   return (
     <View>
-      <Image source={require('./../../assets/images/logins.jpeg')} // ! better image and change location
+      <Image source={require('./../../assets/images/farmer-1.jpg')} // ! better image and change location
       className="w-full h-[400px] object-cover"
       />
 
